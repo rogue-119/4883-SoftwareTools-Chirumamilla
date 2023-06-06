@@ -3,6 +3,7 @@
 #### Email: swarajtwok@gmail.com
 #### Website: N/A
 #### Image:
-![Albert Einstein](https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/einstein.png)
+![colorado dp](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/assets/67910599/22f112e8-9761-4dfe-a639-4bb2d5b89e65)
+
 #### Avatar:
 N/A
