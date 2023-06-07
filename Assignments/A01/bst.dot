@@ -1,1 +1,31 @@
+digraph linkedlist {
+    //rankdir=LR;
+    node [shape=record color=cyan]
+    
+    // Define the nodes
+    A [label="<left>|<data> 1| <right>"];
+    B [label="<left>|<data> 2| <right>"];
+    C [label="<left>|<data> 3| <right>"];
+    D [label="<left>|<data> 4| <right>"];
+    E [label="<left>|<data> 5| <right>"];
+    F [label="<left>|<data> 6| <right>"];
+    G [label="<left>|<data> 7| <right>"];
+    
+    
+    // Define the edges
+    A:data -> B:left [arrowhead=vee, arrowtail=dot, color=orange, dir=both, tailclip=false];
+    A:data -> C:right [arrowhead=vee, arrowtail=dot, color=orange, dir=both, tailclip=false];
+    B:data -> D:left [arrowhead=vee, arrowtail=dot, color=orange, dir=both, tailclip=false];
+    B:data-> E:right [arrowhead=vee, arrowtail=dot, color=orange, dir=both, tailclip=false];
+    C:data -> F:left [arrowhead=vee, arrowtail=dot, color=orange, dir=both, tailclip=false];
+    C:data -> G:right [arrowhead=vee, arrowtail=dot, color=orange, dir=both, tailclip=false];
+    
+    D:DATA -> Null 
+    E:DATA -> Null 
+    F:DATA -> Null
+    G:DATA -> Null
+    
+    
+  
+}
 
