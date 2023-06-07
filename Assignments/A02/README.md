@@ -1,14 +1,10 @@
-## A02 - Software Tool - Name
+## A02 - Software Tool - Name: Matplotlib
 ### Swaraj Chirumamilla
-### Description:
+### Description:  Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.
 
 
 
-### Files
 
-|   #   | File            | Description                                        |
-| :---: | --------------- | -------------------------------------------------- |
-|       |                 |                                                    |
 
 
 ### Instructions
