@@ -24,8 +24,6 @@ digraph linkedlist {
     E:DATA -> Null 
     F:DATA -> Null
     G:DATA -> Null
-    
-    
-  
+      
 }
 
