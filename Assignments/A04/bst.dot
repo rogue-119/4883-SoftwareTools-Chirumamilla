@@ -1,6 +1,10 @@
 digraph linkedlist {
     //rankdir=LR;
+    
     node [shape=record color=cyan]
+    
+     nodesep=0.5; 
+     ranksep=0.7;
     
     // Define the nodes
     A [label="<left>|<data> 1| <right>"];
@@ -24,6 +28,7 @@ digraph linkedlist {
     E:DATA -> Null 
     F:DATA -> Null
     G:DATA -> Null
-      
+    
+    
+  
 }
-
