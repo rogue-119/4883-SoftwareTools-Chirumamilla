@@ -1,5 +1,23 @@
 import csv
 
+def assign_color(clan_number):
+    colors = {
+        '1': 'cyan',
+        '2': 'pink',
+        '3': 'yellow',
+        '4': 'green',
+        '5': 'orange'
+    }
+    return colors.get(clan_number, 'white')
+
+def assign_shape(gender):
+    if gender == 'Male':
+        return 'ellipse'
+    elif gender == 'Female':
+        return 'polygon'
+    else:
+        return 'ellipse'
+
 # Open the CSV file
 with open('family_tree_data.csv', mode='r') as file:
     reader = csv.DictReader(file)
@@ -26,7 +44,9 @@ with open('family_tree_data.csv', mode='r') as file:
         parentNodeId = row['parentNodeId']
 
         # Add the node definition to the dot file contents
-        node_definition = f'"{pid}" [label="{name}\\nGender: {gender}\\nGeneration: {generation}\\nBirth Year: {byear}\\nDeath Year: {dyear}\\nDeath Age: {dage}\\nMarriage Year: {myear}\\nMarriage Age: {mage}\\nParent Type: {ptype}\\nClan: {clan}"];\n'
+        color = assign_color(clan)
+        shape = assign_shape(gender)
+        node_definition = f'"{pid}" [label="{name}\\nGender: {gender}\\nGeneration: {generation}\\nBirth Year: {byear}\\nDeath Year: {dyear}\\nDeath Age: {dage}\\nMarriage Year: {myear}\\nMarriage Age: {mage}\\nParent Type: {ptype}\\nClan: {clan}", style="filled", fillcolor="{color}", shape="{shape}", sides="4"];\n'
         dot_content += node_definition
 
         # Add the edge definitions to the dot file contents
