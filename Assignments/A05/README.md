@@ -1,7 +1,7 @@
 ## A05 - Family Tree using Graphviz
 ### Swaraj Chirumamilla
 ### Description:
--An Assignment to create a family tree using graphviz in python and create the required dot files which can be run on graphviz online editor
+- An Assignment to create a family tree using graphviz in python and create the required dot files which can be run on graphviz online editor
 
  
 
@@ -20,8 +20,8 @@
 
 ### Instructions
 
--Install graphviz extensions to run python code
--Place dot files in graphviz online dot editor to see the image which is in family_tree.svg
+- Install graphviz extensions to run python code
+- Place dot files in graphviz online dot editor to see the image which is in family_tree.svg
 
 
 ### Example Command:
