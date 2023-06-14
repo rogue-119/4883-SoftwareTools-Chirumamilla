@@ -10,9 +10,9 @@
 |   #   | File            | Description                                        |
 | :---: | --------------- | -------------------------------------------------- |
 |   1   | family_tree_data.csv  | file that holds data for family tree         |
-|   3  | family_tree.dot        | file that holds dot files of family tree     |
-|   4   | family_tree.svg       | file that holds image of the generated family tree |
-|   5   | main.py      | the python file with all the functions       |
+|   2  | family_tree.dot        | file that holds dot files of family tree     |
+|   3   | family_tree.svg       | file that holds image of the generated family tree |
+|   4   | main.py      | the python file with all the functions       |
 
 
 
