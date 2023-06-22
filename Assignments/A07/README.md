@@ -28,7 +28,10 @@ Fetching weekly weather data for Dec 31, 2020, for airport code KCHO:
 •	Airport Code: KCHO
 •	Frequency: weekly
 
-  
+  ![image](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/assets/67910599/5307b17c-c65f-4213-bc6a-9464b9033097)
+  ![image](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/assets/67910599/a4649a9e-fc10-4295-a949-c206c1f5bc33)
+
+
 
 Fetching daily weather data for Dec 31 2020 for airport code KTXK:
 •	Month: 12
@@ -37,6 +40,10 @@ Fetching daily weather data for Dec 31 2020 for airport code KTXK:
 •	Airport Code: KTXK
 •	Frequency: monthly
  
+   ![image](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/assets/67910599/e2dd50a3-dd51-417d-9720-dbfd27831f67)
+   ![image](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/assets/67910599/ef6aa411-6f48-49f8-a5bc-bfca77962220)
+
+
 
  
 
@@ -47,7 +54,12 @@ Fetching monthly weather data for the week of December 31, 2023, for airport cod
 •	Year: 2020
 •	Airport Code: KTXK
 •	Frequency: weekly
- 
+
+         
+         ![image](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/assets/67910599/abd22477-77dc-40f2-8ee6-ab13c97e8d08)
+         ![image](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/assets/67910599/4e9c9bcb-d4af-4e0e-82fe-f59fb8c427ae)
+
+
 
  
 
@@ -59,4 +71,3 @@ Future Improvements
 •	Adding support for more data sources for enhanced reliability and availability of data.
 •	Improving error handling and input validation to make the program more robust and user-friendly.
 •	Extending the interface to support more input parameters, such as specific hours of the day, or specific weather conditions.
-
