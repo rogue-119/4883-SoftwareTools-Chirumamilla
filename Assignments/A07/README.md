@@ -1,20 +1,20 @@
-Weather Data Scraper
+###Weather Data Scraper
 This project is a Python-based weather data scraper that fetches historical weather data from Weather Underground based on the provided parameters such as a month, day, year, airport code, and frequency. The data is presented to the user in a simple and easy-to-understand table format.
-Requirements
-•	Python 3.x
-•	Selenium (pip install selenium)
-•	BeautifulSoup (pip install beautifulsoup4)
-•	PySimpleGUI (pip install PySimpleGUI)
-•	Chrome WebDriver is installed and available in PATH or the directory where the scripts are being run
+###Requirements
+-	Python 3.x
+-	Selenium (pip install selenium)
+-	BeautifulSoup (pip install beautifulsoup4)
+-	PySimpleGUI (pip install PySimpleGUI)
+-	Chrome WebDriver is installed and available in PATH or the directory where the scripts are being run
 Files
 The project consists of two Python files:
-•	gui.py: This file provides a graphical user interface to the user for input parameters and displays the fetched weather data.
-•	get_weather.py: This file uses Selenium and BeautifulSoup to scrape historical weather data from Weather Underground.
+-	gui.py: This file provides a graphical user interface to the user for input parameters and displays the fetched weather data.
+-	get_weather.py: This file uses Selenium and BeautifulSoup to scrape historical weather data from Weather Underground.
 Implementation Details
-•	The application uses PySimpleGUI for the GUI components. The interface collects the user’s desired parameters, such as date, airport code, and data frequency.
-•	The GUI script reads airport codes from a CSV file (airport-codes.csv).
-•	Selenium WebDriver is used in the get_weather.py script to render the dynamic web page from Weather Underground.
-•	BeautifulSoup is used to parse the page HTML and extract the necessary data. The data is then returned to gui.py, which displays it in a tabular format using PySimpleGUI's Table element.
+-	The application uses PySimpleGUI for the GUI components. The interface collects the user’s desired parameters, such as date, airport code, and data frequency.
+-	The GUI script reads airport codes from a CSV file (airport-codes.csv).
+-	Selenium WebDriver is used in the get_weather.py script to render the dynamic web page from Weather Underground.
+-	BeautifulSoup is used to parse the page HTML and extract the necessary data. The data is then returned to gui.py, which displays it in a tabular format using PySimpleGUI's Table element.
 How to Run
 1.	Install all the necessary requirements mentioned above.
 2.	Run the gui.py script.
