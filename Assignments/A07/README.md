@@ -58,8 +58,10 @@ Fetching monthly weather data for the week of December 31, 2023, for airport cod
 -	Frequency: weekly
 
          
-         ![image](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/assets/67910599/abd22477-77dc-40f2-8ee6-ab13c97e8d08)
-         ![image](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/assets/67910599/4e9c9bcb-d4af-4e0e-82fe-f59fb8c427ae)
+       ![image](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/assets/67910599/df77fc63-01aa-48a2-b055-b49a4668d754)
+ 	      ![image](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/assets/67910599/4b7673d3-f93a-4554-bb9d-3ce1a0fc3dca)
+
+
 
 
 
