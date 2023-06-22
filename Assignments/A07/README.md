@@ -40,8 +40,10 @@ Fetching daily weather data for Dec 31 2020 for airport code KTXK:
 -	Airport Code: KTXK
 -	Frequency: monthly
  
-   ![image](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/assets/67910599/e2dd50a3-dd51-417d-9720-dbfd27831f67)
-   ![image](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/assets/67910599/ef6aa411-6f48-49f8-a5bc-bfca77962220)
+  ![image](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/assets/67910599/aaf6f669-1b0b-4b76-99b7-d8cb0e7c0d9e)
+  ![image](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/assets/67910599/0be8d731-eaf1-4d00-a525-0956a2f58f89)
+
+
 
 
 
