@@ -1,6 +1,6 @@
-##Weather Data Scraper
+## Weather Data Scraper
 This project is a Python-based weather data scraper that fetches historical weather data from Weather Underground based on the provided parameters such as a month, day, year, airport code, and frequency. The data is presented to the user in a simple and easy-to-understand table format.
-##Requirements
+## Requirements
 -	Python 3.x
 -	Selenium (pip install selenium)
 -	BeautifulSoup (pip install beautifulsoup4)
