@@ -6,17 +6,13 @@ This project is a Python-based weather data scraper that fetches historical weat
 -	BeautifulSoup (pip install beautifulsoup4)
 -	PySimpleGUI (pip install PySimpleGUI)
 -	Chrome WebDriver is installed and available in PATH or the directory where the scripts are being run
-## Files
-The project consists of two Python files:
--	gui.py: This file provides a graphical user interface to the user for input parameters and displays the fetched weather data.
--	get_weather.py: This file uses Selenium and BeautifulSoup to scrape historical weather data from Weather Underground.
 
   ### Files
 
 |   #   | File            | Description                                        |
 | :---: | --------------- | -------------------------------------------------- |
 |   1   | [gui.py](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/blob/main/Assignments/A07/gui.py)  | This file provides a graphical user interface to the user for input parameters and displays the fetched weather data.         |
-|   2  | [get_weather.py](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/blob/main/Assignments/A05/family_tree.dot)|  This file uses Selenium and BeautifulSoup to scrape historical weather data from Weather Underground.  |
+|   2  | [get_weather.py](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/blob/main/Assignments/A07/get_weather.py)|  This file uses Selenium and BeautifulSoup to scrape historical weather data from Weather Underground.  |
 |   3   | [requirements](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/blob/main/Assignments/A05/family_tree.svg)       | file which states the reqirements needed to run the project |
 
 
