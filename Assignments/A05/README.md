@@ -12,7 +12,7 @@
 |   1   | [family_tree_data.csv](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/blob/main/Assignments/A05/family_tree_data.csv)  | file that holds data for family tree         |
 |   2  | [family_tree.dot](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/blob/main/Assignments/A05/family_tree.dot)| file that holds dot files of family tree     |
 |   3   | [family_tree.svg](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/blob/main/Assignments/A05/family_tree.svg)       | file that holds image of the generated family tree |
-|   4   | [main.py]()      | the python file with all the functions       |
+|   4   | [main.py](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/blob/main/Assignments/A05/main.py)      | the python file with all the functions       |
 
 
 
