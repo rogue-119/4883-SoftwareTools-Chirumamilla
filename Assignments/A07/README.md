@@ -15,7 +15,7 @@ The project consists of two Python files:
 
 |   #   | File            | Description                                        |
 | :---: | --------------- | -------------------------------------------------- |
-|   1   | [gui.py](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/blob/main/Assignments/A05/family_tree_data.csv)  | This file provides a graphical user interface to the user for input parameters and displays the fetched weather data.         |
+|   1   | [gui.py](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/blob/main/Assignments/A07/gui.py)  | This file provides a graphical user interface to the user for input parameters and displays the fetched weather data.         |
 |   2  | [get_weather.py](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/blob/main/Assignments/A05/family_tree.dot)|  This file uses Selenium and BeautifulSoup to scrape historical weather data from Weather Underground.  |
 |   3   | [requirements](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/blob/main/Assignments/A05/family_tree.svg)       | file which states the reqirements needed to run the project |
 
