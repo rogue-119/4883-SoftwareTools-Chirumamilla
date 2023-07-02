@@ -7,4 +7,4 @@
 |    03  |  [A05](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/tree/main/Assignments/A05)| Generating a family tree using graphviz    |
 |    04  |  [A06](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/tree/main/Assignments/A06)| Software tool presentation    |
 |    05  |  [A07](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/tree/main/Assignments/A07)| Web Scraping using python    |
-|    06  |  [A08](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/tree/main/Assignments/A06)| REST API                        |
+|    06  |  [A08](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/tree/main/Assignments/A08)| REST API                        |
