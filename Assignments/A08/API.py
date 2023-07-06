@@ -26,6 +26,10 @@ class DataReader:
         unique_countries = self.data["Country"].unique().tolist()
         return unique_countries
 
+    def get_available_regions(self):
+        available_regions = self.data["WHO_region"].unique().tolist()
+        return available_regions
+
 # Instantiate the DataReader class with the CSV file path
 mydb = DataReader(r'C:\Users\swara\OneDrive\Desktop\assignemnet\data.csv')
 
@@ -45,6 +49,10 @@ async def countries():
     unique_countries = mydb.get_unique_countries()
     return {"countries": unique_countries}
 
+@app.get("/regions")
+def regions():
+    available_regions = mydb.get_available_regions()
+    return {"regions": available_regions}
 
 
 
