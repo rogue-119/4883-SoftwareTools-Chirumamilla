@@ -80,7 +80,7 @@ async def deaths(country:str = None,year:int = None,region:str = None):
             message=f"Total number of deaths in {year} for the country of {country} is {response}"
         if region!=None:
             response=int(mydb.data.loc[(pd.to_datetime(mydb.data['Date_reported']).dt.year == int(year)) & (mydb.data['WHO_region'] == region), 'New_deaths'].sum())
-            message=f"Total number of deaths in {year} for the WHO region in {region} is {response}"
+            message=f"Total number of deaths in {year} in the WHO region in {region} is {response}"
         else:
             response=int(mydb.data.loc[pd.to_datetime(mydb.data['Date_reported']).dt.year == int(year), 'New_deaths'].sum())
             message=f"Total number of deaths in {year} is {response}"
@@ -92,10 +92,39 @@ async def deaths(country:str = None,year:int = None,region:str = None):
             response=int(mydb.data[mydb.data['WHO_region'] == region]['New_deaths'].sum())
             message=f"Total number of deaths in the WHO region of {region} is {response}"
 
-    return {"data": response, "success": True, "message": message}
+    return {"deaths": response, "message": message}
 
 
+@app.get("/cases/")
+async def cases(country:str = None,year:int = None,region:str = None):
+    """
+    This method will return a total death count or can be filtered by country and year.
+    - Params:
+      - country (str) : A country name
+      - year (int) : A 4 digit year
+      - region (str) : A region name
+    - **Returns:**
+      - (int) : The total sum of cases based on filters (if any)
+    """
+    response=int(mydb.data['New_cases'].sum())
+    message=f"Total number of entire cases {response}"
+    if year!=None:
+        # response=int(mydb.data.loc[pd.to_datetime(mydb.data['Date_reported']).dt.year == int(year), 'New_cases'].sum())
+        if country!=None:
+            response=int(mydb.data.loc[(pd.to_datetime(mydb.data['Date_reported']).dt.year == int(year)) & (mydb.data['Country'] == country), 'New_cases'].sum())
+            message=f"Total number of cases in {year} in the country of {country} is {response}"
+        if region!=None:
+            response=int(mydb.data.loc[(pd.to_datetime(mydb.data['Date_reported']).dt.year == int(year)) & (mydb.data['WHO_region'] == region), 'New_cases'].sum())
+            message=f"Total number of cases in {year} in the WHO region in {region} is {response}"
+        else:
+            response=int(mydb.data.loc[pd.to_datetime(mydb.data['Date_reported']).dt.year == int(year), 'New_cases'].sum())
+            message=f"Total number of cases in {year} is {response}"
+    else:
+        if country!=None:
+            response=int(mydb.data[mydb.data['Country'] == country]['New_cases'].sum())
+            message=f"Total number of cases in the country of {country} is {response}"
+        if region!=None:
+            response=int(mydb.data[mydb.data['WHO_region'] == region]['New_cases'].sum())
+            message=f"Total number of cases in the WHO region of {region} is {response}"
 
-
-if __name__ == "__main__":
-        uvicorn.run("main:app", host="127.0.0.1", port=8000, log_level="debug", reload=True) #host="127.0.0.1"
+    return {"cases": response, "message": message}
