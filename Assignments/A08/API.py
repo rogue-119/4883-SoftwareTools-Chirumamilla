@@ -128,3 +128,61 @@ async def cases(country:str = None,year:int = None,region:str = None):
             message=f"Total number of cases in the WHO region of {region} is {response}"
 
     return {"cases": response, "message": message}
+
+
+
+@app.get("/max_deaths")
+async def max_deaths(min_date: str = Query(None, description="Minimum date (YYYY-MM-DD)"),
+                     max_date: str = Query(None, description="Maximum date (YYYY-MM-DD)")):
+    """
+    Finds the country with the most deaths and the country with the most deaths between a range of dates.
+
+    Parameters:
+    - min_date (str): Minimum date (YYYY-MM-DD) (optional).
+    - max_date (str): Maximum date (YYYY-MM-DD) (optional).
+
+    Returns:
+    - (dict): A dictionary containing the country with the most deaths.
+    """
+    if min_date is None and max_date is None:
+        # Find the country with the overall most deaths
+        country_with_most_deaths = mydb.data.loc[mydb.data["Cumulative_deaths"].idxmax(), "Country"]
+        return {"country_with_most_deaths": country_with_most_deaths}
+    elif min_date is not None and max_date is not None:
+        # Find the country with the most deaths between the given range of dates
+        filtered_data = mydb.data[(mydb.data["Date_reported"] >= min_date) & (mydb.data["Date_reported"] <= max_date)]
+        country_with_most_deaths = filtered_data.loc[filtered_data["Cumulative_deaths"].idxmax(), "Country"]
+        return {"country_with_most_deaths": country_with_most_deaths}
+    else:
+        return {"error": "Both min_date and max_date must be provided."}
+
+@app.get("/min_deaths")
+async def min_deaths(min_date: str = Query(None, description="Minimum date (YYYY-MM-DD)"),
+                     max_date: str = Query(None, description="Maximum date (YYYY-MM-DD)")):
+    """
+    Finds the country with the fewest deaths and the country with the fewest deaths between a range of dates.
+
+    Parameters:
+    - min_date (str): Minimum date (YYYY-MM-DD) (optional).
+    - max_date (str): Maximum date (YYYY-MM-DD) (optional).
+
+    Returns:
+    - (dict): A dictionary containing the country with the fewest deaths.
+    """
+    if min_date is None and max_date is None:
+        # Find the country with the overall fewest deaths
+        country_with_fewest_deaths = mydb.data.loc[mydb.data["Cumulative_deaths"].idxmin(), "Country"]
+        return {"country_with_fewest_deaths": country_with_fewest_deaths}
+    elif min_date is not None and max_date is not None:
+        # Find the country with the fewest deaths between the given range of dates
+        filtered_data = mydb.data[(mydb.data["Date_reported"] >= min_date) & (mydb.data["Date_reported"] <= max_date)]
+        country_with_fewest_deaths = filtered_data.loc[filtered_data["Cumulative_deaths"].idxmin(), "Country"]
+        return {"country_with_fewest_deaths": country_with_fewest_deaths}
+    else:
+        return {"error": "Both min_date and max_date must be provided."}
+
+
+
+
+if __name__ == "__main__":
+        uvicorn.run("main:app", host="127.0.0.1", port=8000, log_level="debug", reload=True) #host="127.0.0.1"
