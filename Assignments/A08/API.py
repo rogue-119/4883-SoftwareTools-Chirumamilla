@@ -181,7 +181,26 @@ async def min_deaths(min_date: str = Query(None, description="Minimum date (YYYY
     else:
         return {"error": "Both min_date and max_date must be provided."}
 
+@app.get("/average_deaths")
+async def average_deaths(country1: str = Query(..., description="Country 1"),
+                         country2: str = Query(..., description="Country 2")):
+    """
+    Calculates the average deaths between two countries.
 
+    Parameters:
+    - country1 (str): Name of the first country.
+    - country2 (str): Name of the second country.
+
+    Returns:
+    - (dict): A dictionary containing the average deaths for each country.
+    """
+    if country1 == country2:
+        return {"error": "Country names must be different."}
+
+    country1_deaths = mydb.data[mydb.data["Country"] == country1]["New_deaths"].mean()
+    country2_deaths = mydb.data[mydb.data["Country"] == country2]["New_deaths"].mean()
+
+    return {"average_deaths": {country1: country1_deaths, country2: country2_deaths}}
 
 
 if __name__ == "__main__":
