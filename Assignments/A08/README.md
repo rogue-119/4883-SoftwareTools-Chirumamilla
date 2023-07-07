@@ -18,7 +18,7 @@ Created a RESTful API using FastAPI that provides access to COVID-19 data. The A
  #### Example
 
 - Request: GET `/regions/`
-### Example 1: [
+#### Example 1: [http://127.0.0.1:5000/regions](http://127.0.0.1:5000/regions)
     ### Response:               
                   {
                     "regions": [
@@ -31,15 +31,28 @@ Created a RESTful API using FastAPI that provides access to COVID-19 data. The A
                             "Other"
                             ]
                    }
+
+
+                   
 - Request: GET `/deaths/` 
-### Example 2: [http://127.0.0.1:5000/deaths/?country=India&year=2020](http://127.0.0.1:5000/deaths/?country=India&year=2020)
+#### Example 2: [http://127.0.0.1:5000/deaths/?country=India&year=2020](http://127.0.0.1:5000/deaths/?country=India&year=2020)
     ### Response:
              { "deaths": 1946775,
               "message": "Total number of deaths in 2020 is 1946775"}
 
 
- 
-                     
+- Request: GET `/cases/`
+#### Example 3: [http://127.0.0.1:5000/cases/?country=China&year=2020](http://127.0.0.1:5000/cases/?country=China&year=2020)
+      ### Response:
+              {
+                "cases": 82853510,
+                "message": "Total number of cases in 2020 is 82853510"
+               }
+#### Example 4: [http://127.0.0.1:5000/max_deaths?min_date=2020-03-24&max_date=2021-06-21](http://127.0.0.1:5000/max_deaths?min_date=2020-03-24&max_date=2021-06-21)
+          ### Response:
+                {
+                    "country_with_most_deaths": "United States of America"
+                 }
 ## Instructions
 
 - Install all dependencies from requirments.txt
