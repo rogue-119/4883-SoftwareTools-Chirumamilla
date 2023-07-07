@@ -19,26 +19,14 @@ Created a RESTful API using FastAPI that provides access to COVID-19 data. The A
 
 - Request: GET `/regions/`
   
-- Link: [http://localhost:5000/regions/](http://localhost:5000/regions/)
-  
-- Response:
+curl -X 'GET' \
+  'http://127.0.0.1:5000/deaths/?country=India&year=2020' \
+  -H 'accept: application/json'
 
-```json
-{
-  "data": [
-    "EMRO",
-    "EURO",
-    "AFRO",
-    "WPRO",
-    "AMRO",
-    "SEARO",
-    "Other"
-  ],
-  "success": true,
-  "message": "All Unique WHO regions",
-  "size": 7
+  {
+  "deaths": 1946775,
+  "message": "Total number of deaths in 2020 is 1946775"
 }
-```
 
 ## Instructions
 
