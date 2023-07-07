@@ -19,12 +19,12 @@ Created a RESTful API using FastAPI that provides access to COVID-19 data. The A
 
 - Request: GET `/regions/`
   
-{"data":{"EMRO":351329},
-                     "success":true,
-                     "message":"Deaths of Region",
-                     "Region":"EMRO",
-                     "country":null,
-                     "year":null}
+Example 1 [http://127.0.0.1:5000/deaths/?country=India&year=2020](http://127.0.0.1:5000/deaths/?country=India&year=2020)
+Response :
+{
+  "deaths": 1946775,
+  "message": "Total number of deaths in 2020 is 1946775"
+}
 
                      
 ## Instructions
