@@ -15,9 +15,17 @@ Created a RESTful API using FastAPI that provides access to COVID-19 data. The A
 
 ## Fast API Endpoints
 
- 1. Regions
-    {
-  "regions": [
+ #### Example
+
+- Request: GET `/regions/`
+  
+- Link: [http://localhost:5000/regions/](http://localhost:5000/regions/)
+  
+- Response:
+
+```json
+{
+  "data": [
     "EMRO",
     "EURO",
     "AFRO",
@@ -25,8 +33,12 @@ Created a RESTful API using FastAPI that provides access to COVID-19 data. The A
     "AMRO",
     "SEARO",
     "Other"
-  ]
+  ],
+  "success": true,
+  "message": "All Unique WHO regions",
+  "size": 7
 }
+```
 
 ## Instructions
 
