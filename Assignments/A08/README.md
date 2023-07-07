@@ -16,7 +16,7 @@ Created a RESTful API using FastAPI that provides access to COVID-19 data. The A
 ## API Endpoints
 
  - Route: /
-  - Retrieves the documentation provided by swagger.
+   - Retrieves the documentation provided by swagger.
 
  Route: /countries
 - Retrieves a list of unique countries from the "db"
