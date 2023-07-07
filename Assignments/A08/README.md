@@ -19,7 +19,8 @@ Created a RESTful API using FastAPI that provides access to COVID-19 data. The A
 
 - Request: GET `/regions/`
 ### Example 1: [
-    ### Response:                 {
+    ### Response:               
+{
   "regions": [
     "EMRO",
     "EURO",
