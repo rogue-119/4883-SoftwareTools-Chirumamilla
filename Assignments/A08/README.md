@@ -17,8 +17,8 @@ Created a RESTful API using FastAPI that provides access to COVID-19 data. The A
 
 ## Instructions
 
- Install all dependencies from requirments.txt
- Please change the data.csv file path which is given in line number 40.
+- Install all dependencies from requirments.txt
+-  Please change the data.csv file path which is given in line number 40.
  
 
 
