@@ -15,31 +15,28 @@ Created a RESTful API using FastAPI that provides access to COVID-19 data. The A
 
 ## Fast API Endpoints
 
-Route: /
-- Retrieves the documentation provided by swagger.
+- Route: /
+Retrieves the documentation provided by swagger.
 
--Route: /countries
+- Route: /countries
 Retrieves a list of unique countries from the "db"
 
-Route: /regions
+- Route: /regions
 Retrieves a list of available WHO regions from the "db"
 
 - Route: /deaths
 Retrieves total deaths for all countries,for the given country, WHO region and year
 
-Route: /cases
+- Route: /cases
 Retrieves total casess for all countries,for the given country, WHO region and year
 
-Route: /max_deaths
-
+- Route: /max_deaths
 Find the country with the most deaths between a range of dates
 
-Route: /min_deaths
-
+-Route: /min_deaths
 Find the country with the least deaths between a range of dates
 
-Route: /avg_deaths
-
+-Route: /avg_deaths
 Find the average number of deaths between all countries
 
  #### Example
