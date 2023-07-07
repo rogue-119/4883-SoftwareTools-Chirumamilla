@@ -26,6 +26,15 @@ Created a RESTful API using FastAPI that provides access to COVID-19 data. The A
   "message": "Total number of deaths in 2020 is 1946775"
 }
 
+ #### Example 2: [http://localhost:5000/deaths/?country=Afghanistan](http://localhost:5000/deaths/?country=Afghanistan)
+
+    #### Response 2: 
+                    {"data":{"Afghanistan":7922},
+                      "success":true,
+                      "message":"Deaths in a Country",
+                      "Region":null,
+                      "country":"Afghanistan",
+                      "Year":null}
                      
 ## Instructions
 
