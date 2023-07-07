@@ -14,7 +14,19 @@ Created a RESTful API using FastAPI that provides access to COVID-19 data. The A
 |    3 | [requirements](https://github.com/swarajtwok/4883-SoftwareTools-Chirumamilla/blob/main/Assignments/A08/requirements.txt) | requirements needed to install to run code|
 
 ## Fast API Endpoints
- 
+
+ 1. Regions
+    {
+  "regions": [
+    "EMRO",
+    "EURO",
+    "AFRO",
+    "WPRO",
+    "AMRO",
+    "SEARO",
+    "Other"
+  ]
+}
 
 ## Instructions
 
