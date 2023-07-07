@@ -15,6 +15,33 @@ Created a RESTful API using FastAPI that provides access to COVID-19 data. The A
 
 ## Fast API Endpoints
 
+Route: /
+- Retrieves the documentation provided by swagger.
+
+-Route: /countries
+Retrieves a list of unique countries from the "db"
+
+Route: /regions
+Retrieves a list of available WHO regions from the "db"
+
+- Route: /deaths
+Retrieves total deaths for all countries,for the given country, WHO region and year
+
+Route: /cases
+Retrieves total casess for all countries,for the given country, WHO region and year
+
+Route: /max_deaths
+
+Find the country with the most deaths between a range of dates
+
+Route: /min_deaths
+
+Find the country with the least deaths between a range of dates
+
+Route: /avg_deaths
+
+Find the average number of deaths between all countries
+
  #### Example
 
 - Request: GET `/regions/`
@@ -67,15 +94,17 @@ Created a RESTful API using FastAPI that provides access to COVID-19 data. The A
 #### Example 6: [http://127.0.0.1:5000/average_deaths?country1=Afghanistan&country2=China](http://127.0.0.1:5000/average_deaths?country1=Afghanistan&country2=China)
         ### Response:
         {
-           "average_deaths": {
+           "average_deaths": 
             "Afghanistan": 6.257503949447077,
              "China": 95.88467614533965
-                  }
+                  
          }
 ## Instructions
 
 - Install all dependencies from requirments.txt
 -  Please change the data.csv file path which is given in line number 40.
  
+### Challenges Faced 
 
+- Was getting Server errors in the process of writing Deaths function, solved it through trobleshooting and took help of ChatGPT while writing the deaths Function and the maximum no. of deaths Endpoint.
 
